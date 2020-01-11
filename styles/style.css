@@ -1,0 +1,36 @@
+body {
+    font-family: monospace;
+    background-color: grey;
+}
+
+header {
+    text-align: center;
+    font-size: 45px;
+}
+
+nav.menu {
+    background-color: black;
+    padding: 10px;
+    margin-left: 4px;
+    margin-right: 5px;
+}
+
+nav.menu a{
+    color: #7d7d7d;
+    text-decoration: none;
+    padding: 10px
+}
+
+a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+article img{
+    display: block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
