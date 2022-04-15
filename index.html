@@ -1,18 +1,146 @@
 <!DOCTYPE html>
-<!-- Whole thing is just my sandbox :P -->
+<html lang="pl">
 <head>
-    <title>Ziemowit Wójcicki Homesite</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <script src="scripts/main.js"></script>
+    <title>Ziemowit Wójcicki &#8211 strona główna</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="matematyka, algorytmy, programowanie" />
+    <meta name="description" content="Strona autorska" />
+    <meta name="author" content="Ziemowit Wójcicki" />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mathstyle.css">
 </head>
+
 <body>
-<header>Homesite</header>
-<nav class="menu">
-    <a href="https://zaratusztra.github.io/">Main page</a>
+<header>
+    <h1>Ziemowit Wójcicki &#8211 strona prywatna Github</h1>
+</header>
+<nav class="main-nav">
+    <img src="images/AVC1.png" />
+    <ul>
+        <a href="https://github.com/Zaratusztra"><li>Github</li></a>
+        <a href="https://discord.gg/Vv4DsUCQec"><li>Discord</li></a>
+        <a href="https://www.deviantart.com/zaratusztra"><li>Deviantart</li></a>
+    </ul>
 </nav>
-<article>
-	Mój serwer discord, poświęcony Naukom Ścisłym:
-	https://discord.gg/c6ZGtp
-    <img src="images/f_the_world_Im_Panda.gif" alt="">
+<article class="centralblock">
+    <section class="content">
+      <h2>O mnie</h2>
+      <p>
+        Ta strona to moja mała wizytówka w internecie &#128512
+      </p>
+      <p>
+        Moją największą wadą jest rozpiętość zainteresowań i niepochamowana chęć oddawania się im wszystkim.
+        Ta strona prezentuje przekrój moich zainteresowań w dziedzinach ogólnie
+        rzecz biorąc bazujących na naukach ścisłych.
+      </p>
+
+      <p>
+        Trochę w życiu szukałem przez to swojej drogi, rzuciłem
+        ASP (grafika „użytkowa” to jednak nie moja bajka), studia
+        inżynierskie z informatyki a w końcu po różnych
+        zawirowaniach życiowych szarpnąłem się ostatecznie gonić za
+        marzeniami i poszedłem na wymarzoną matematykę teoretyczną
+        na uniwersytecie. Choć taka specjalność efektywnie dała mi
+        m. in. możliwość realizowania ciekawych przedmiotów z matematyki
+        stosowanej, w szerszym spektrum niż w ramach ustalonej
+        specjalności &#8211 realizowałem przedmioty informatyczne,
+        wstęp do matematyki finansowej i parę innych rzeczy.
+      </p>
+
+      <p>
+        Jak na moje żywe zainteresowanie technologią i
+        postępem technicznym,
+        jestem też trochę „retrolubem”, 
+        a <em>wybiórczo</em> naturalistycznym „tradycjonalistą”;
+        powiedzmy, że z braku lepszego określenia &#8211 
+        „kontestatorem” współczesnej cywilizacji &#128512
+        Interesuję się ideą wolnego i otwartego oprogramowania oraz
+        wolnej kultury (open coulture);
+      </p>
+
+      <p>
+        Nie, nie uważam się za „anarchoprymitywistę”,
+        libertarianina, etc.
+      </p>
+
+      <p>
+        Lubię grzebać w systemach unixowych, nie lubię się z windowsem
+        i wcześniejszymi wytworami Micro$oftu; chociaż doceniam
+        pewną zmianę kierunku tej firmy w ostatnich latach. 
+        Szczególnie parę wytworów, jak
+        PowerShell, VS Code (za samym Visual Studio jako takim nigdy nie
+        przepadałem), czy wprowadzenie Language Server Protocol
+        (LSP).
+      </p>
+
+    </section>
+
+    <section id="interests">
+      <h3>Zainteresowania</h3>
+      <ul>
+          <li>Analiza rzeczywista i analiza funkcjonalna</li>
+          <li>Topologia</li>
+          <li>Algorytmika i matematyka dyskretna</li>
+          <li>Filozofia analityczna</li>
+          <li>Filozofia i twórczość Fridricha Nietzchego</li>
+          <li>Ekonomia, ekonomia złożoności, data science w naukach społecznych i ekonomicznych</li>
+      </ul>
+      <h3>Technologie</h3>
+      <h4 id="języki-programowania.">Języki programowania.</h4>
+      <p>
+        Moje preferowane języki programowania: <br/>
+        C, C++, Python, Haskell.
+      </p>
+      <p>
+        W wypadku pythona, poznałem też trochę pakiet 
+        naukowy/matematyczny sagemath, będący de facto nakładką 
+        na pythona.
+      </p>
+      <p>
+        Na chwilę obecną radzę sobie też trochę w JavaScripcie, 
+        poradzę pisać/rozumieć proste skrypty w bashu i języku lua. 
+        Wykonam proste zapytania SQL, dopiero zaczynam trochę więcej 
+        poznawać rozwiązania typu ORM. Z samej teorii baz danych ze
+        studiów pamiętam jakieś podstawy podstaw.
+        Tę stronę skleciłem od zera w html+css, ale front-end to
+        nie moja bajka, po prostu lubię proste rzeczy ogarnąć sobie
+        „od zera”.
+      </p>
+
+      <p>Jestem zainteresowany nauką Rusta.</p>
+
+      <h4 id="pozostałe-narzędzia.">Pozostałe narzędzia.</h4>
+      <p>
+        W podstawowym stopniu korzystam z gita. 
+        Mam świadomość istnienia wielu systemów budowania, 
+        z których eksperymentowałem z CMake’iem i mesonem; 
+        jednak nie mogę powiedzieć, że któreś z tych narzędzi 
+        mam opanowane na elementarnym poziomie. 
+        Ale bez wątpienia
+        jest to w moim zasięgu w razie konieczności.
+        Doraźnie od dawna korzystam po prostu z GNU make
+        dla moich eksperymentów i małych zabawek w C i C++. 
+      </p>
+      <p>
+        Największy nerd wychodzi ze mnie w kwestii wyboru
+        IDE czy notatnika programistycznego &#128516
+        Przyznam, że jestem entuzjastą Vima (nie aż tak, żeby 
+        wchodzić w vimscript, ale obecnie eksperymentuję ze skryptowaniem
+        Neovimia z użyciem języka lua). Mógłbym się przerzucić na
+        poważniejsze IDE w razie konieczności. Korzystam trochę z
+        PyCharm od JetBrains z nakładką „vimującą” ale czuję,
+        że nie wykorzystuję w większości tego co oferuje.
+
+        Mogło być gorzej, nie siedzę w Emacsie &#129299
+      </p>
+    </section>
 </article>
+<footer>
+    <p>Mój serwer Discord poświęcony naukom ścisłym:</p>
+    <a href="https://discord.gg/Vv4DsUCQec">
+    <h3>Zrzeszenie Entuzjastów Nauk (matematycznych i pokrewnych) ZEN</h3>
+    </a>
+</footer>
 </body>
+</html>

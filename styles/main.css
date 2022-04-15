@@ -1,0 +1,82 @@
+:root {
+
+--rich-black-fogra-29: #11151cff;
+--prussian-blue: #212d40ff;
+--sizzling-red: #f2545bff;
+--mint-cream: #f1f7edff;
+--honey-yellow: #f6ae2dff;
+
+}
+
+body {
+    background-color: var(--rich-black-fogra-29);
+    color: var(--mint-cream);
+}
+
+header {
+    margin: 0px;
+    padding: 0px;  
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+nav.main-nav {
+    margin-top: 8%;
+    margin-left: 2%;
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+nav.main-nav img {
+    max-width: 80%;
+    height: auto;
+    padding: 4px;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li {
+    margin: 10px;
+    padding-top: 10px;
+}
+
+nav ul a {
+    color: var(--mint-cream);
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+article {
+    margin: 10px;
+    padding: 10px;
+    margin-left: 24%;
+    margin-right: 5%;
+}
+
+article section.content {
+    margin-top: 10%;
+    text-align: justify;
+}
+
+article section#interests {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
