@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Ziemowit Wójcicki &#8211 strona główna</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="matematyka, algorytmy, programowanie" />
+    <meta name="description" content="Strona autorska" />
+    <meta name="author" content="Ziemowit Wójcicki" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mathstyle.css">
+</head>
+
+<body>
+<nav class="main-nav">
+    <img src="images/AVC1.png" />
+    <ul>
+        <a href="https://github.com/Zaratusztra"><li>Github</li></a>
+        <a href="https://Zaratusztra.github.io/index.html"><li>O mnie</li></a>
+        <a href="https://discord.gg/Vv4DsUCQec"><li>Discord</li></a>
+        <a href="https://www.deviantart.com/zaratusztra"><li>Deviantart</li></a>
+    </ul>
+</nav>
+<article class="centralblock">
+    <section class="content">
+        <h2>Funkcje oddzielnie ciągłe</h2>
+        <p>
+            Tytułowe funkcje stanowią temat mojej pracy licencjackiej &#128578
+        </p>
+
+        <hr>
+        <p class="mathtext">
+        Będziemy rozważać funkcje postaci
+        \begin{equation}
+            f\colon X\times Y\to Z
+        \end{equation}
+        gdzie \(X,Y\) i \(Z\) są dowolnymi
+        przestrzeniami topologicznymi (choć
+        \(Z\) najczęściej rozważamy jako
+        przestrzeń metryzowalną).
+        Stosujemy oznaczenia:
+        </p>
+        <ul>
+            <li>\(\quad f^{x}(y)=f(x,y), \; y\in Y\), </li>
+            <li>\(\quad f_{y}(x)=f(x,y), \; x\in X\). </li>
+        </ul>
+        <p class="mathtext">
+        Zatem z każdą funkcją dwóch zmiennych \(f\) kojarzymy
+        dwie wyznaczone przez nią „oddzielne” funkcje
+        \(f^x\) i \(f_y\) jednej zmiennej (aczkolwiek
+        np. zmienna \(y\) może być np. elementem przestrzeni
+        \(\mathbb{R}^n\), gdy \(Y=\mathbb{R}^n\).
+        Patrzymy na ten punkt o \(n\)
+        współrzędnych jako na jeden punkt przestrzeni \(Y\)).
+        </p>
+        
+        <h3>Definicja</h3>
+        <p class="mathtext">
+            Mówimy, że funkcja \(f\colon X\times Y\to Z\) jest 
+            <em>oddzielnie ciągła w punkcie</em> 
+            \((x_0,y_0)\), gdy
+            <ol>
+                <li class="mathtext">\(f^{x_0}\) jest ciągła w punkcie \(y_0\), </li>
+                <li class="mathtext">\(f_{y_0}\) jest ciągła w punkcie \(x_0\). </li>
+            </ol>
+        </p>
+        <h3>Własności</h3>
+        <p class="mathtext">
+            Oczywiście funkcja ciągła w zdanym punkcie \(x\), jest 
+            w tym punkcie oddzielnie ciągła. Implikacja ta nie zachodzi
+            w drugą stronę, o czym pewnie wie każdy student, który
+            przeszedł przez analizę matematyczną wielu zmiennych &#128578
+            Poniższy przykład, który w literaturze występuje jako funkcja
+            Schwarza, jest jak żywcem wyjęty ze zbioru zadań albo
+            kolokwium gdzieś z trzeciego lub drugiego semestru analizy.
+        </p>
+        <p class="mathtext">
+            Niech funkcja \(f\colon\mathbb{R}\times\mathbb{R}\to\mathbb{R}\) będzie zadana wzorem
+            \begin{equation}\label{eq:schwarz_funkcja}
+            f(x,y)=\begin{cases}
+            \frac{2xy}{x^2+y^2}, & \text{dla } (x,y)\neq(0,0);\\
+             \; 0, & \text{dla } (x,y)=(0,0).
+            \end{cases}
+            \end{equation}
+            Tak określoną funkcję nazywamy właśnie <em>funkcją Schwarza</em>.
+            Jest ona w topologii euklidesowej oddzielnie ciągła, ale nie jest ciągła w zerze. 
+        </p>
+
+        <p class="mathtext">
+        Dla każdej funkcji \(f\) przyjmujemy oznaczenie
+        \(C(f)\) dla zbioru wszystkich punktów ciągłości
+        tej funkcji
+        i komplementarnie przez \(D(f)\) oznaczamy zbiór
+        punktów, w których funkcja \(f\) nie jest ciągła.
+        </p>
+
+        <p class="mathtext">
+        W analizie rzeczywistej bada się własności
+        topologiczne zbiorów \(C(f)\) i \(D(f)\).
+        Np. jeżeli \(f\) jest określona na \(\mathbb{R}\)
+        lub na przedziale domkniętym \(I\subseteq\mathbb{R}\),
+        to wówczas zbiór \(C(f)\) jest zbiorem typu
+        \(\mathcal{G}_\delta\), zaś zbiór \(D(f)\)
+        jest typu \(\mathcal{F}_\sigma\).
+
+        Można też pokazać, że dla dowolnego podzbioru
+        \(P\) liczb rzeczywistych, który jest
+        typu \(\mathcal{G}_\delta\), istnieje taka
+        funkcja \(f\), że zbiór \(P\) jest zbiorem
+        jej punktów ciągłości, czyli \(P=C(f)\)
+        dla pewnej funkcji rzeczywistej \(f\).
+        </p>
+
+        <p class="mathtext">
+        W mojej pracy opisuję m. in. klasyczne twierdzenia znane
+        jako twierdzenia Baire'a o funkcjach oddzielnie
+        ciągłych. Mówią one o własnościach topologicznych
+        zbiorów \(C(f)\) i \(D(f)\) funkcji \(f\), które
+        są oddzielnie ciągłe. Oto próbka:
+        </p>
+        <div class="theorem-hd">Twierdzenie Baire'a o poziomowej.</div>
+        <div class="theorem">
+            Niech \(X, Y\) będą przestrzeniami topologicznymi,
+            przy czym \(Y\) spełnia drugi aksjomat przeliczalności
+            w ustalonym punkcie \(b\in Y\), a \(Z\) będzie przestrzenią
+            metryzowalną. Ponadto, niech \(f\colon X\times Y\to Z\)
+            będzie funkcją odddzielnie ciągłą. Wówczas istnieje taki
+            zbiór rezydualny \(A\subseteq X\), że funkcja \(f\) 
+            jest ciągła w każdym punkcie \(x\in A\times\{b\}\).
+        </div>
+    </section>
+</article>
+<footer>
+    <p>Mój serwer Discord poświęcony naukom ścisłym:</p>
+    <a href="https://discord.gg/Vv4DsUCQec">
+    <h3>Zrzeszenie Entuzjastów Nauk (matematycznych i pokrewnych) ZEN</h3>
+    </a>
+</footer>
+</body>
+</html>

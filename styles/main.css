@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    color: var(--honey-yellow);
     margin: 0px;
     padding: 0px;  
     background-color: black;
@@ -70,6 +71,9 @@ article section.content {
     text-align: justify;
 }
 
+article section.content h1, h2, h3, h4, h5 {
+}
+
 article section#interests {
     margin-top: 5%;
     text-align: justify;
@@ -79,4 +83,29 @@ footer {
     position: absolute;
     width: 100%;
     text-align: center;
+}
+
+
+.theorem-hd {
+    font-family: "times new roman";
+    font-style: none;
+    font-weight: bold;
+    font-size: 115%;
+    text-indent: 5px;
+    margin-bottom: 5px;
+}
+
+.theorem {
+    font-family: "times new roman";
+    font-style: oblique;
+}
+
+.mathmode {
+    text-indent: 20px;
+    font-family: "times new roman";
+}
+
+.mathtext {
+    text-indent: 20px;
+    font-family: "times new roman";
 }
