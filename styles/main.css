@@ -69,6 +69,7 @@ article {
 article section.content {
     margin-top: 10%;
     text-align: justify;
+    word-spacing:-1px;
 }
 
 article section.content h1, h2, h3, h4, h5 {
@@ -77,6 +78,7 @@ article section.content h1, h2, h3, h4, h5 {
 article section#interests {
     margin-top: 5%;
     text-align: justify;
+    word-spacing:-1px;
 }
 
 footer {
