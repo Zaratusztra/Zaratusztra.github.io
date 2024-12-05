@@ -3,6 +3,7 @@
 --background-dark: #1e1f25;
 --rich-black-fogra-29: #11151cff;
 --prussian-blue: #212d40ff;
+--link-blue: #99ccff;
 --sizzling-red: #f2545bff;
 --mint-cream: #f1f7edff;
 --honey-yellow: #f6ae2dff;
@@ -10,11 +11,13 @@
 }
 
 body {
+    font-family: sans-serif, system-ui;
     background-color: var(--background-dark);
     color: var(--mint-cream);
 }
 
 header {
+    font-family: cursive, "Courier New", monospace;
     color: var(--honey-yellow);
     margin: 0px;
     padding: 0px;  
@@ -32,12 +35,16 @@ nav.main-nav {
     float: left;
 }
 
+nav.main-nav hr {
+    width: 55%;
+}
+
 nav.main-nav img {
     max-width: 80%;
     height: auto;
     padding: 4px;
     margin: 5px;
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 nav ul {
@@ -47,7 +54,12 @@ nav ul {
 
 nav ul li {
     margin: 10px;
-    padding-top: 10px;
+}
+
+nav.main-nav ul img {
+    padding: 0px;
+    margin: 0px;
+    object-fit: contain;
 }
 
 nav ul a {
@@ -56,6 +68,36 @@ nav ul a {
 }
 
 nav ul a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+div.articles-scroll {
+    color: var(--mint-cream);
+    list-style: none;
+    margin: 5px;
+    overflow: scroll;
+    height: 200px;
+}
+
+nav h1 {
+    text-align: center;
+    font-family: cursive; 
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div.articles-scroll li {
+    padding: 5px;
+}
+
+div.articles-scroll a {
+    color: var(--mint-cream);
+    text-decoration: none;
+}
+div.articles-scroll a:hover {
     color: orange;
     text-decoration: none;
 }
@@ -88,6 +130,9 @@ footer {
     text-align: center;
 }
 
+footer a {
+    color: var(--link-blue);
+}
 
 .theorem-hd {
     font-family: "times new roman";
