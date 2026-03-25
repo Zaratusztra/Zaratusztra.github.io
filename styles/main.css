@@ -47,6 +47,10 @@ nav.main-nav img {
     margin-left: 25px;
 }
 
+nav.main-nav h1, h2, h3, h4, h5 {
+    font-size: 130%;
+}
+
 nav ul {
     list-style: none;
     margin: 10px;
