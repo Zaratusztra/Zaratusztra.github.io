@@ -67,6 +67,15 @@ nav.main-nav ul img {
     object-fit: contain;
 }
 
+nav.main-nav h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav.main-nav h1 a:hoover {
+    color: orange;
+}
+
 nav ul a, nav h1 a {
     color: var(--mint-cream);
     text-decoration: none;
