@@ -10,6 +10,21 @@
 
 }
 
+article a {
+    color: orange;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: rgb(250,240,100);
+    font-weight: bold;
+}
+
+article a:visited {
+    color: rgb(190,140,40);
+    font-weight: bold;
+}
+
 body {
     font-family: sans-serif, system-ui;
     background-color: var(--background-dark);
