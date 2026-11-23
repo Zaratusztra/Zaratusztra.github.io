@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Ziemowit Wójcicki &#8211 strona główna</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="matematyka, Cantor" />
+    <meta name="description" content="Strona autorska" />
+    <meta name="author" content="Ziemowit Wójcicki" />
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]}
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/mathstyle.css">
+</head>
+
+<body>
+<nav class="main-nav">
+    <img src="../images/AVC1.png" />
+    <ul>
+        <a href="https://github.com/Zaratusztra"><li>Github <img src="../images/github-mark-white.svg" width=18 height=18 /></li></a>
+        <a href="https://bsky.app/profile/zaratusztra.bsky.social"><li>BlueSky <img src="../images/bsky.gif" width=18 height=18 /></li></a>
+        <a href="https://discord.gg/Vv4DsUCQec"><li>Discord <img src="../images/discord-logo-white.svg" width=18 height=18 /></li></a>
+        <a href="https://www.deviantart.com/zaratusztra"><li>Deviantart</li></a>
+    </ul>
+    <hr />
+    <h1><a href="https://Zaratusztra.github.io/">Main Page</a></h1>
+</nav>
+<article class="centralblock">
+    <section class="content">
+        <h1>The Cantor set</h1>
+        <hr>
+        <p class="mathtext">
+            We will define a subset \(\mathbf{C}\) of \([0,1]\).
+            \begin{gather*}
+                I_1=\left(\frac{1}{3},\frac{2}{3}\right) \\
+                I_2=\left(\frac{1}{9}, \frac{2}{9}\right), \quad I_3=\left(\frac{7}{9},\frac{8}{9}\right) \\
+                I_4=\left(\frac{1}{27},\frac{2}{27}\right), \; I_5=\left(\frac{7}{27},\frac{8}{27}\right), \; I_6=\left(\frac{19}{27},\frac{20}{27}\right), \; I_7=\left(\frac{25}{27},\frac{26}{27}\right) \\
+                \vdots
+            \end{gather*}
+            The Cantor set is defined by removing from the interval \([0,1]\) all
+            the sets \(I_1,I_2,\ldots\):
+            \begin{equation}
+            \mathbf{C}=[0,1]\setminus\bigcup_{n=1}^{\infty}I_n.
+            \end{equation}
+
+            Sometimes it is more convenient to have a double indexing: $J_{n,k}=I_{2^n+k}$, $k=0,1,\ldots,2^{n}-1$, $n\in\mathbb{N}$.
+            Here, $n$ can be interpreted as the “step” in the iterative procedure of constructing the Cantor set.
+            At the $n$-th step, we remove from $[0,1]$ the sets $J_{n,k}$, $k=0,1,\ldots,2^{n}-1$.
+            Thus, we can write:
+            \begin{equation}
+            \mathbf{C}=[0,1]\setminus\bigcup_{n=1}^{\infty}\bigcup_{k=0}^{2^n-1}J_{n,k}.
+            \end{equation}
+        </p>
+    </section>
+
+    <section>
+        <h3>The basic properties of the Cantor set</h3>
+        <div class="theorem-hd">Theorem.</div>
+        <div class="theorem">
+            The Cantor set have the following properties:
+            <ol>
+                <li>The Lebesgue measure $\mu(\mathbf{C})$ of the Cantor set equals $0$.</li>
+                <li>The set $\mathbf{C}$ is uncountable.</li>
+                <li>The set $\mathbf{C}$ is compact.
+            </ol>
+        </div>
+        <details>
+            <summary><b>Proof.</b></summary>
+            <ol>
+              <li>
+                  Observe, that since $\mathbf{C}$ is obtained by removing from the interval $[0,1]$
+                  at the $n$-th step of the construction, the $2^{n-1}$ intervals $J_{n,k}$ of the length
+                  $\frac{1}{3^n}$ each, we have
+                  \begin{equation*}
+                    \mu(\mathbf{C})=1-\sum_{k=0}^{\infty}\frac{2^k}{3^{k+1}}=1-\frac{1}{3}\cdot\dfrac{1}{1-\frac{2}{3}}=0.
+                  \end{equation*}
+              </li>
+              <li>
+                  Let $x\in\mathbf{C}$, so we have $x=\sum_{n=0}^{\infty}c_n3^{-n}$,
+                  with $c_n\in\{0,2\}$ for any $n\in\mathbb{N}$. We define the function
+                  $f$ by the equation
+                  \begin{equation*}
+                      f(x)=\sum_{n=1}^{\infty}b_n2^{-n},
+                  \end{equation*}
+                  where $b_n=\frac{a_n}{2}$, $n\in\mathbb{N}$.
+                  It is enough to see, that $f$ maps $\mathbf{C}$ onto $[0,1]$, and so
+                  $\text{card}\,\mathbf{C}\geq\text{card}\,[0,1]=\mathfrak{c}$.
+              </li>
+              <li>
+                  Obviously, $\mathbf{C}$ is bounded, as a subset of the interval $[0,1]$.
+                  Since
+                  $\mathbf{C}=[0,1]\setminus\bigcup\limits_{n=1}^{\infty}I_n=\bigcap\limits_{n=1}^{\infty}\big([0,1]\setminus I_n\big)$
+                  is an intersection of closed sets, it is also a closed set.
+                  Hence, $\mathbf{C}$ is compact.
+              </li>
+            </ol>
+        </details>
+
+        <div class="theorem-hd">Theorem.</div>
+        <div class="theorem">
+            The Cantor set \(\text{ }\mathbf{C}\subseteq[0,1]\) does not contain any open interval.
+            In particular, the Cantor set does not have any isolated points.
+        </div>
+        <details>
+            <summary><b>Proof.</b></summary>
+            Let $x,y\in\mathbf{C}$, $x\lt y$. We can choose $n\in\mathbb{N}$ such that \(y-x\gt\dfrac{2}{3^n}\).
+            By the construction, there exists $\ell,k\in\mathbb{N}$ with $\ell+1\lt k$ such that
+            \begin{equation*}
+                 x\in\left[\frac{\ell}{3^n},\frac{\ell+1}{3^n}\right] \quad 
+                 \text{ and } \quad y\in\left[\frac{k}{3^n},\frac{k+1}{3^n}\right].
+            \end{equation*}
+            We have $I_{2^{n}+k}=\left(\frac{k+1}{3^{n}},\frac{k+2}{3^{n}}\right)$ and
+            $\mathbf{C}\cap I_{2^n+k}=\varnothing$. Moreover $I_{2^n+k}$ does not interesect
+            neither of intervals $\left[\frac{k}{3^{n}},\frac{k+1}{3^{n}}\right]$ and 
+            $\left[\frac{\ell}{3^{n}},\frac{\ell+1}{3^n}\right]$.
+            Therefore, for any $z\in I_{2^n+k}$ we have $x\lt z\lt y$ and $z\notin\mathbf{C}$.
+            This means, that $(x,y)$ cannot be a subset of $\mathbf{C}$.
+        </details>
+
+        <div class="theorem-hd">Corollary.</div>
+        <div class="theorem">
+            The Cantor set \(\mathbf{C}\) is a nowhere dense subset of \([0,1]\).
+        </div>
+    </section>
+
+    <!--
+    <section>
+        <h3>Continuous surjections from Cantor Sets to Compact Metric Spaces</h3>
+    </section>
+    <hr>
+    -->
+</article>
+<footer>
+    <p>My discord server dedicated to mathematics and exact sciences (<b>in PL</b>):</p>
+    <a href="https://discord.gg/Vv4DsUCQec">
+    <h3>Zrzeszenie Entuzjastów Nauk (matematycznych i pokrewnych) ZEN</h3>
+    </a>
+</footer>
+</body>
+</html>

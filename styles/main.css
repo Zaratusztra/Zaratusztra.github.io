@@ -189,4 +189,14 @@ footer a {
 .mathtext {
     text-indent: 20px;
     font-family: "times new roman";
+    line-height: 1.6;
+}
+
+mjx-container:not([display="true"]) {
+  margin: 0 0.18em !important;
+}
+
+details {
+    margin-bottom: 20px;
+    background-color: rgb(60, 60, 60);
 }
