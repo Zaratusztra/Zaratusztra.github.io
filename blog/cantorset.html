@@ -59,6 +59,14 @@
             \begin{equation}
             \mathbf{C}=[0,1]\setminus\bigcup_{n=1}^{\infty}\bigcup_{k=0}^{2^n-1}J_{n,k}.
             \end{equation}
+            We can also denote $C_1=[0,1]\setminus I_1$,
+            $C_2=[0,1]\setminus I_2\cup I_3$ and so on, for any $n$,
+            $C_n=[0,1]\setminus\bigcup_{k=0}^{2^{n}-1}J_{n,k}$.
+            Then, 
+            \begin{equation*}
+              \mathbf{C}=[0,1]\setminus\bigcup_{n=1}^{\infty}\bigcup_{k=0}^{2^n-1}J_{n,k}
+              =\bigcap_{n=1}^{\infty}\left([0,1]\setminus\bigcup_{k=0}^{2^{n}-1}J_{n,k}\right)=\bigcap_{n=1}^{\infty}C_n.
+            \end{equation*}
         </p>
     </section>
 
@@ -111,19 +119,7 @@
         </div>
         <details>
             <summary><b>Proof.</b></summary>
-            Let $x,y\in\mathbf{C}$, $x\lt y$. We can choose $n\in\mathbb{N}$ such that \(y-x\gt\dfrac{2}{3^n}\).
-            By the construction, there exists $\ell,k\in\mathbb{N}$ with $\ell+1\lt k$ such that
-            \begin{equation*}
-                 x\in\left[\frac{\ell}{3^n},\frac{\ell+1}{3^n}\right] \quad 
-                 \text{ and } \quad y\in\left[\frac{k}{3^n},\frac{k+1}{3^n}\right].
-            \end{equation*}
-            We have $I_{2^{n}+\ell}=\left(\frac{\ell+1}{3^{n}},\frac{\ell+2}{3^{n}}\right)$ and
-            $\mathbf{C}\cap I_{2^n+k}=\varnothing$.
-            <!-- Moreover $I_{2^n+k}$ does not interesect
-            neither of intervals $\left[\frac{k}{3^{n}},\frac{k+1}{3^{n}}\right]$ and 
-            $\left[\frac{\ell}{3^{n}},\frac{\ell+1}{3^n}\right]$. -->
-            Therefore, for any $z\in I_{2^n+k}$ we have $x\lt z\lt y$ and $z\notin\mathbf{C}$.
-            This means, that $(x,y)$ cannot be a subset of $\mathbf{C}$.
+            To-do.
         </details>
 
         <div class="theorem-hd">Corollary.</div>
