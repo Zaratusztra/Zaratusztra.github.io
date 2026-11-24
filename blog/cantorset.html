@@ -108,7 +108,6 @@
         <div class="theorem-hd">Theorem.</div>
         <div class="theorem">
             The Cantor set \(\text{ }\mathbf{C}\subseteq[0,1]\) does not contain any open interval.
-            In particular, the Cantor set does not have any isolated points.
         </div>
         <details>
             <summary><b>Proof.</b></summary>
@@ -118,10 +117,11 @@
                  x\in\left[\frac{\ell}{3^n},\frac{\ell+1}{3^n}\right] \quad 
                  \text{ and } \quad y\in\left[\frac{k}{3^n},\frac{k+1}{3^n}\right].
             \end{equation*}
-            We have $I_{2^{n}+k}=\left(\frac{k+1}{3^{n}},\frac{k+2}{3^{n}}\right)$ and
-            $\mathbf{C}\cap I_{2^n+k}=\varnothing$. Moreover $I_{2^n+k}$ does not interesect
+            We have $I_{2^{n}+\ell}=\left(\frac{\ell+1}{3^{n}},\frac{\ell+2}{3^{n}}\right)$ and
+            $\mathbf{C}\cap I_{2^n+k}=\varnothing$.
+            <!-- Moreover $I_{2^n+k}$ does not interesect
             neither of intervals $\left[\frac{k}{3^{n}},\frac{k+1}{3^{n}}\right]$ and 
-            $\left[\frac{\ell}{3^{n}},\frac{\ell+1}{3^n}\right]$.
+            $\left[\frac{\ell}{3^{n}},\frac{\ell+1}{3^n}\right]$. -->
             Therefore, for any $z\in I_{2^n+k}$ we have $x\lt z\lt y$ and $z\notin\mathbf{C}$.
             This means, that $(x,y)$ cannot be a subset of $\mathbf{C}$.
         </details>
@@ -129,6 +129,11 @@
         <div class="theorem-hd">Corollary.</div>
         <div class="theorem">
             The Cantor set \(\mathbf{C}\) is a nowhere dense subset of \([0,1]\).
+        </div>
+
+        <div class="theorem-hd">Corollary.</div>
+        <div class="theorem">
+            The Cantor set \(\mathbf{C}\) does not have any isolated points.
         </div>
     </section>
 
